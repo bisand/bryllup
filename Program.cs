@@ -26,7 +26,7 @@ if (app.Environment.IsDevelopment())
 app.UseFileServer(new FileServerOptions
 {
     FileProvider = new PhysicalFileProvider(
-         Path.Combine(Directory.GetCurrentDirectory(), "www")),
+         Path.Combine(Directory.GetCurrentDirectory(), "web")),
     RequestPath = "",
     EnableDefaultFiles = true
 });
