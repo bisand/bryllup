@@ -11,6 +11,11 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+var config =
+    new ConfigurationBuilder()
+        .AddEnvironmentVariables()
+        .Build();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -21,6 +26,9 @@ if (app.Environment.IsDevelopment())
     //     options.RoutePrefix = string.Empty;
     // }
     );
+    var root = Directory.GetCurrentDirectory();
+    var dotenv = Path.Combine(root, ".env");
+    DotEnv.Load(dotenv);
 }
 
 app.UseFileServer(new FileServerOptions

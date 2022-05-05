@@ -12,9 +12,18 @@ public class ContactController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Post([FromForm] ContactForm model)
+    public IActionResult Post([FromForm] ContactForm model)
     {
         _logger.LogInformation(0, null, (object)model);
+        var mailClient = new MailClient();
+        try
+        {
+            mailClient.Send("bryllup@biseth.net", model.InputMessage);
+        }
+        catch (System.Exception)
+        {
+            return BadRequest("An error ofurred while trying to send mail");
+        }
         return Ok(new { text = "Takk for tilbakemeldingen!" });
     }
 }
