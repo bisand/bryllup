@@ -1432,7 +1432,7 @@
 						<!-- Show Message -->
 					</div>
 				</div>
-				<form method="post" action="/contact" id="rsvpform" >
+				<form method="post" action="/contact" id="rsvpform">
 					<div class="row">
 						<div class="col-md-6 animation fadeInUp">
 							<div class="form-group">
@@ -1444,11 +1444,11 @@
 								<input type="email" class="form-control ajax-input" id="inputemail" placeholder="" data-required="Email Required" data-output-label="Output Email">
 							</div>
 							<div class="form-group">
-								<label for="inputevents">*JEG ØNSKER Å DELTA</label>
-								<select multiple id="inputevents" class="form-control ajax-input" data-required="Please Select Events" data-output-label="Output Events">
-									<option>Wedding Day</option>
-									<option>Ceremony Day</option>
-									<option>The Party</option>
+								<label for="inputevents">*SVAR PÅ DELTAKELSE</label>
+								<select id="inputevents" class="form-control ajax-input" data-required="Please Select Events" data-output-label="Output Events">
+									<option disabled selected value> -- velg et alternativ -- </option>
+									<option value="ja">Ja, jeg ønsker å delta</option>
+									<option value="nei">Nei, jeg kan dessverre ikke</option>
 								</select>
 							</div>
 						</div>

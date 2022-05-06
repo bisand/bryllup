@@ -28,10 +28,13 @@ public class MailClient
         // in the display name.
         MailAddress from = new MailAddress(!string.IsNullOrWhiteSpace(sender) ? sender : "bryllup@biseth.net", "Bryllup 2022", System.Text.Encoding.UTF8);
         // Set destinations for the email message.
-        MailAddress to = new MailAddress("bryllup@biseth.net");
+        MailAddress to = new MailAddress("andre@biseth.net");
         // Specify the message content.
-        using (MailMessage message = new MailMessage(from, to))
+        using (MailMessage message = new MailMessage())
         {
+            message.From = from;
+            message.To.Add(new MailAddress("andre@biseth.net", "André Biseth"));
+            message.To.Add(new MailAddress("anita@rsy.no", "Anita Syvertsen"));
             message.Body = body;
             // Include some non-ASCII characters in body and subject.
             message.Body += Environment.NewLine;
