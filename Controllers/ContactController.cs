@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 
+namespace bryllup.Controllers;
+
 [ApiController]
 [Route("[controller]")]
 public class ContactController : ControllerBase
