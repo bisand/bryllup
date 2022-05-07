@@ -13,6 +13,12 @@ public class ContactController : ControllerBase
         _logger = logger;
     }
 
+    [HttpGet]
+    public IActionResult Get()
+    {
+        return Ok(new { result = "OK" });
+    }
+
     [HttpPost]
     public IActionResult Post([FromForm] ContactForm model)
     {
