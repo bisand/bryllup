@@ -43,7 +43,7 @@
   		var mapOptions = {
     		zoom: 16,		
 			mapTypeId: google.maps.MapTypeId.ROADMAP,	
-    		center: new google.maps.LatLng(35.441921, -97.432528),
+    		center: new google.maps.LatLng(59.26718915260442, 10.404467118277417),
 			panControl: true,
   			zoomControl: true,
   			mapTypeControl: true,

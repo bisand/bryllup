@@ -40,9 +40,9 @@
 		//DEFINE MAP OPTIONS
 		//=======================================================================================
   		var mapOptions = {
-    		zoom: 16,		
+    		zoom: 15,		
 			mapTypeId: google.maps.MapTypeId.ROADMAP,	
-    		center: new google.maps.LatLng(35.441921, -97.432528),
+    		center: new google.maps.LatLng(59.26718915260442, 10.404467118277417),
 			panControl: true,
   			zoomControl: true,
   			mapTypeControl: true,
@@ -85,18 +85,18 @@
 		//ADD NEW MARKER WITH LABEL
 		//=======================================================================================
 		var marker1 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(35.441921, -97.432528),
+       		position: new google.maps.LatLng(59.26718915260442, 10.404467118277417),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map, 
-         	labelContent: '<div id="wedding-marker" class="main-icon-wrapper"><div class="big-circle scale-animation"></div><div class="main-icon-text">Wedding</br>Location</div></div>',
+         	labelContent: '<div id="wedding-marker" class="main-icon-wrapper"><div class="big-circle scale-animation"></div><div class="main-icon-text">Bryllupslokalet</div></div>',
        		labelAnchor: new google.maps.Point(88, 88),
        		labelClass: "labels" // the CSS class for the label
      	});
 		
 		var marker2 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(35.440033, -97.437056),
+       		position: new google.maps.LatLng(59.27201069833698, 10.404323239912161),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
@@ -107,7 +107,7 @@
      	});
 		
 		var marker3 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(35.441899, -97.439043),
+       		position: new google.maps.LatLng(59.26988063314156, 10.412292031159565),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
@@ -129,7 +129,7 @@
      	});
 		
 		var marker5 = new MarkerWithLabel({
-       		position: new google.maps.LatLng(35.443835, -97.428649),
+       		position: new google.maps.LatLng(59.271911454667446, 10.409456385929458),
        		draggable: false,
        		raiseOnDrag: false,
        		icon: ' ',
