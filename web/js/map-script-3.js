@@ -157,9 +157,9 @@
 		//=======================================================================================
 		var contentString1 = ''+
 		'<div class="info-window-wrapper">'+
-			'<h6>CEREMONY</h6>'+
-			'<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada aliquam nunc.</div>'+
-			'<div class="info-window-link"><a href="#" class="grey-link with-underline">Click Here</a></div>'+
+			'<h6>FESTEN</h6>'+
+			'<div class="info-window-desc">Tollboden.<br>Nedre Langgate 38.</div>'+
+			'<div class="info-window-link"><a href="https://g.page/TollbodenSpiseri?share" target="_blank" class="grey-link with-underline">Click Here</a></div>'+
       	'</div>';
 		
 		var marker1_infowindow = new google.maps.InfoWindow({
@@ -169,7 +169,7 @@
   		});
 		
 		//OPEN INFO WINDOWS ON LOAD
-  		marker1_infowindow.open(map,marker1);
+  		// marker1_infowindow.open(map,marker1);
 		
 		//ON MARKER CLICK EVENTS
 		google.maps.event.addListener(marker1, 'click', function() {
@@ -181,9 +181,9 @@
 		//=======================================================================================
 		var contentString2 = ''+
 		'<div class="info-window-wrapper">'+
-			'<h6>GIFT STATION</h6>'+
-			'<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada aliquam nunc.</div>'+
-			'<div class="info-window-link"><a href="#" class="grey-link with-underline">Click Here</a></div>'+
+			'<h6>VIELSEN</h6>'+
+			'<div class="info-window-desc">Slottsfjelltårnet på toppen av Slottsfjellet.</div>'+
+			'<div class="info-window-link"><a href="https://goo.gl/maps/jRNnpU6t38DWAQJe8" target="_blank" class="grey-link with-underline">Click Here</a></div>'+
       	'</div>';
 		
 		var marker2_infowindow = new google.maps.InfoWindow({
@@ -202,9 +202,9 @@
 		//=======================================================================================
 		var contentString3 = ''+
 		'<div class="info-window-wrapper">'+
-			'<h6>BUS STOP</h6>'+
-			'<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada aliquam nunc.</div>'+
-			'<div class="info-window-link"><a href="#" class="grey-link with-underline">Click Here</a></div>'+
+			'<h6>BUSSTERMINAL</h6>'+
+			'<div class="info-window-desc">Tønsberg Rutebilstasjon ved Farmandstredet.</div>'+
+			'<div class="info-window-link"><a href="https://goo.gl/maps/6jX5mphKC3g2ZRLX9" target="_blank" class="grey-link with-underline">Click Here</a></div>'+
       	'</div>';
 		
 		var marker3_infowindow = new google.maps.InfoWindow({
@@ -252,9 +252,9 @@
 		//=======================================================================================
 		var contentString5 = ''+
 		'<div class="info-window-wrapper">'+
-			'<h6>TRAIN STATION</h6>'+
-			'<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada aliquam nunc.</div>'+
-			'<div class="info-window-link"><a href="#" class="grey-link with-underline">Click Here</a></div>'+
+			'<h6>TOGSTASJON</h6>'+
+			'<div class="info-window-desc">Tønsberg Jernbanestasjon.</div>'+
+			'<div class="info-window-link"><a href="https://goo.gl/maps/ws54MCS3bxpP6wDb7" target="_blank" class="grey-link with-underline">Click Here</a></div>'+
       	'</div>';
 		
 		var marker5_infowindow = new google.maps.InfoWindow({

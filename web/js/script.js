@@ -483,7 +483,7 @@
 	// 06.2 Countdown
 	//================================================================================
 	var theday = new Date();
-	theday = new Date(2022, 9, 22);
+	theday = new Date(2022, 9, 22, 15);
 	$('.countdown').countdown({until: theday, format: 'DHMS'});
 	
 	

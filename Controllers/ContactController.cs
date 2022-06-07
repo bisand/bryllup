@@ -28,7 +28,7 @@ public class ContactController : ControllerBase
         var mailClient = new MailClient();
         try
         {
-            var message = string.Format("Navn: {0}\r\nE-post: {1}\r\nKommer: {2}\r\nMelding: {3}\r\n", model.InputName, model.InputEmail, model.InputEvents, model.InputMessage);
+            var message = string.Format("Navn: {0}\r\nE-post: {1}\r\nAlternativ: {2}\r\nMelding: {3}\r\n", model.InputName, model.InputEmail, model.InputEvents, model.InputMessage);
             mailClient.Send("bryllup@biseth.net", message);
         }
         catch (System.Exception)
