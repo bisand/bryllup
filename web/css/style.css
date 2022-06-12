@@ -966,9 +966,23 @@ img.rounded{
 	height:inherit;
 	width:100%;
 	background-size:cover; 
-	background-position:50% 50%;
+	background-position:center 80%;
 	background-color:#FFF;
+	background-image:url(../images/anitaogandre-forside-1.jpg);
 	-webkit-transform: translateZ(0);
+}
+
+@media (max-width: 600px) {
+	#main-slider .slide-image {
+		position:relative;
+		height:inherit;
+		width:100%;
+		background-size:cover; 
+		background-position:90% 80%;
+		background-color:#FFF;
+		background-image:url(../images/anitaogandre-forside-2.jpg);
+		-webkit-transform: translateZ(0);
+	}
 }
 
 #main-slider .slide-image video{
