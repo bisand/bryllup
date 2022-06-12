@@ -3537,7 +3537,7 @@ button.mfp-close, button.mfp-arrow {
 .story-date{
 	float:none;
 	position:absolute;	
-	top:-45px;
+	top:-20px;
 	left:0;
 	right:0;
 	margin:auto;
