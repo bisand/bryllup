@@ -31,8 +31,9 @@ public class ContactController : ControllerBase
             var message = string.Format("Navn: {0}\r\nE-post: {1}\r\nAlternativ: {2}\r\nMelding: {3}\r\n", model.InputName, model.InputEmail, model.InputEvents, model.InputMessage);
             mailClient.Send("bryllup@biseth.net", message);
         }
-        catch (System.Exception)
+        catch (System.Exception ex)
         {
+            Console.WriteLine(ex);
             return BadRequest("An error ocurred while trying to send mail");
         }
         return Ok(new { text = "Takk for tilbakemeldingen!" });
